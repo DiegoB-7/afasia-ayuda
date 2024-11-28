@@ -7,7 +7,8 @@ from datetime import datetime
 from functools import wraps, partial
 
 import aniso8601
-from werkzeug.contrib.cache import SimpleCache
+
+from cachelib import SimpleCache
 from werkzeug.local import LocalProxy, LocalStack
 from jinja2 import BaseLoader, ChoiceLoader, TemplateNotFound
 from flask import current_app, json, request as flask_request, _app_ctx_stack
